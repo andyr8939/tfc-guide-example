@@ -11,7 +11,7 @@ provider "random" {
 resource "random_pet" "table_name" {}
 
 resource "aws_vpc" "main" {
-  cidr_block       = "10.0.0.0/16"
+  cidr_block       = "10.0.0.0/8"
   instance_tenancy = "default"
 
   tags = {
